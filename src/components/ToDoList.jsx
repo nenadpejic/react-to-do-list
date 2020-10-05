@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import ToDoItem from "./ToDoItem";
 
+const Ul = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 400px;
+`;
+
 const Div = styled.div`
   position: relative;
   margin: 0.5rem 0;
@@ -15,6 +22,7 @@ const Input = styled.input`
   padding: 0.5rem 1rem;
   padding-right: 3rem;
   position: relative;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -66,11 +74,11 @@ class ToDoList extends Component {
   render() {
     return (
       <div>
-        <ul>
+        <Ul>
           {this.state.items.map((item, index) => (
             <ToDoItem key={index} item={item} onDelete={this.handleDelete} />
           ))}
-        </ul>
+        </Ul>
         <form onSubmit={this.handleSubmit}>
           <Div>
             <Input type="text" id="inputText" placeholder="Add item" />
