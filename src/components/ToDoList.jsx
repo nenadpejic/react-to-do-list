@@ -49,11 +49,12 @@ class ToDoList extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const value = document.querySelector("#inputText").value;
-    if (value !== "" || value !== null) {
+    let input = document.querySelector("#inputText");
+    if (input.value !== "" || input.value !== null) {
       let items = [...this.state.items];
-      items.push(value);
+      items.push(input.value);
       this.setState({ items });
+      input.value = "";
     }
   };
 
@@ -72,7 +73,7 @@ class ToDoList extends Component {
         </ul>
         <form onSubmit={this.handleSubmit}>
           <Div>
-            <Input type="text" id="inputText" />
+            <Input type="text" id="inputText" placeholder="Add item" />
             <Button type="submit">Add</Button>
           </Div>
         </form>

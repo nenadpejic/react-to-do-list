@@ -15,7 +15,7 @@ ul {
 }
 
 .App-logo {
-  height: 150px;
+  height: 130px;
   pointer-events: none;
 }
 
@@ -32,7 +32,10 @@ ul {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-top: 2rem;
+  padding: 1rem 0;
+}
+.App-header h1 {
+  margin: 0;
 }
 
 .App-link {
@@ -54,6 +57,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
 
