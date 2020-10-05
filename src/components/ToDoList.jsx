@@ -1,20 +1,30 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import ToDoItem from "./ToDoItem";
 
 const Ul = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
-  max-width: 400px;
   margin-bottom: 1rem;
 `;
 
 const Div = styled.div`
-  position: relative;
-  margin: 0.5rem 0;
-  border-radius: 0.25rem;
-  overflow: hidden;
+  ${(props) =>
+    props.input &&
+    css`
+      position: relative;
+      margin: 0.5rem 0;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    `}
+  ${(props) =>
+    props.window &&
+    css`
+      max-width: 400px;
+      height: calc(100vh - 21rem);
+      overflow-y: auto;
+    `}
 `;
 
 const Input = styled.input`
@@ -75,13 +85,8 @@ class ToDoList extends Component {
   render() {
     return (
       <div>
-        <Ul>
-          {this.state.items.map((item, index) => (
-            <ToDoItem key={index} item={item} onDelete={this.handleDelete} />
-          ))}
-        </Ul>
         <form onSubmit={this.handleSubmit}>
-          <Div>
+          <Div input>
             <Input
               type="text"
               id="inputText"
@@ -91,6 +96,13 @@ class ToDoList extends Component {
             <Button type="submit">Add</Button>
           </Div>
         </form>
+        <Div window>
+          <Ul>
+            {this.state.items.map((item, index) => (
+              <ToDoItem key={index} item={item} onDelete={this.handleDelete} />
+            ))}
+          </Ul>
+        </Div>
       </div>
     );
   }
