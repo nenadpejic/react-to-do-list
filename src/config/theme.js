@@ -1,0 +1,9 @@
+export const white = "#fff";
+export const hover = "#eee";
+export const border = "#ddd";
+export const active = "#ccc";
+export const mainLight = "#ffd89d";
+export const mainDark = "#ff9d0a";
+export const textDark = "#222";
+export const textLight = "#555";
+export const danger = "#dc3545";
