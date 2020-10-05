@@ -7,6 +7,10 @@ const Li = styled.li`
   overflow: hidden;
   border-radius: 0.25rem;
   margin: 0.5rem 0;
+
+  &:hover > button {
+    display: inline-block;
+  }
 `;
 
 const Span = styled.span`
@@ -17,6 +21,7 @@ const Span = styled.span`
 `;
 
 const Button = styled.button`
+  display: none;
   border: none;
   position: absolute;
   width: 3rem;
