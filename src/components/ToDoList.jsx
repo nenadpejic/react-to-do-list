@@ -7,6 +7,7 @@ const Ul = styled.ul`
   margin: 0;
   list-style: none;
   max-width: 400px;
+  margin-bottom: 1rem;
 `;
 
 const Div = styled.div`
@@ -58,7 +59,7 @@ class ToDoList extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     let input = document.querySelector("#inputText");
-    if (input.value !== "" || input.value !== null) {
+    if (input.value !== "" && input.value !== null) {
       let items = [...this.state.items];
       items.push(input.value);
       this.setState({ items });
@@ -81,7 +82,12 @@ class ToDoList extends Component {
         </Ul>
         <form onSubmit={this.handleSubmit}>
           <Div>
-            <Input type="text" id="inputText" placeholder="Add item" />
+            <Input
+              type="text"
+              id="inputText"
+              placeholder="Add item"
+              autoComplete="off"
+            />
             <Button type="submit">Add</Button>
           </Div>
         </form>
