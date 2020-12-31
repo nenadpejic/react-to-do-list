@@ -6,7 +6,7 @@ Live version is [here]()
 
 Code is [here](https://github.com/nenadpejic/react-to-do-list)
 
-[![thumbnail]()](https://github.com/nenadpejic/react-to-do-list)
+[![thumbnail](https://user-images.githubusercontent.com/50808282/103409915-3eab6000-4b69-11eb-8503-b1025396be27.png)](https://github.com/nenadpejic/react-to-do-list)
 
 ## Table of Contents
 
@@ -14,7 +14,6 @@ Code is [here](https://github.com/nenadpejic/react-to-do-list)
 - [Technologies](#features)
 - [Installing](#features)
 - [Credits](#features)
-- [Contributors](#features)
 
 ## Features
 
@@ -58,24 +57,4 @@ $ npm start
 
 ## Credits
 
-App-name is inspired by...
-
-## Contributors
-View contributor graphs [here](https://github.com/{user}/{repo}/graphs/contributors)
-
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/nenadpejic">
-        <img src="https://avatars1.githubusercontent.com/u/50808282?v=4" width="80px" style="border-radius: 50%"/>
-        <p style="text-align: center">Nenad Pejic</p>
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/nenadpejic">
-        <img src="https://avatars1.githubusercontent.com/u/50808282?v=4" width="80px" style="border-radius: 50%"/>
-        <p style="text-align: center">Nenad Pejic</p>
-      </a>
-    </td>
-  </tr>
-</table>
+React-to-do-list is one of my projects during [IT Bootcamps](https://itbootcamp.rs/) course on React.
