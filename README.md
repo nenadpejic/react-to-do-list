@@ -11,9 +11,9 @@ Code is [here](https://github.com/nenadpejic/react-to-do-list)
 ## Table of Contents
 
 - [Features](#features)
-- [Technologies](#features)
-- [Installing](#features)
-- [Credits](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Credits](#credits)
 
 ## Features
 
@@ -25,10 +25,11 @@ Code is [here](https://github.com/nenadpejic/react-to-do-list)
 - node.js
 - git
 - react
+- class-components
 - styled-components
 - gh-pages
 
-## Installing
+## Installation
 
 Make sure you have Node.js installed:
 ```
@@ -57,4 +58,4 @@ $ npm start
 
 ## Credits
 
-React-to-do-list is one of my projects during [IT Bootcamps](https://itbootcamp.rs/) course on React.
+React-to-do-list is one of my projects during [IT Bootcamp](https://itbootcamp.rs/) course on React.
