@@ -2,11 +2,11 @@
 
 React-to-do-list is a simple to-do list app created in React.js that lets you add items to your list and delete them.
 
-Live version is [here]()
+Live version is [here](https://nenadpejic.github.io/react-to-do-list/)
 
 Code is [here](https://github.com/nenadpejic/react-to-do-list)
 
-[![thumbnail](https://user-images.githubusercontent.com/50808282/103409915-3eab6000-4b69-11eb-8503-b1025396be27.png)](https://github.com/nenadpejic/react-to-do-list)
+[![thumbnail](https://user-images.githubusercontent.com/50808282/103409915-3eab6000-4b69-11eb-8503-b1025396be27.png)](https://nenadpejic.github.io/react-to-do-list/)
 
 ## Table of Contents
 
