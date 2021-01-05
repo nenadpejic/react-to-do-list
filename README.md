@@ -1,4 +1,4 @@
-# react-to-do-list
+# React To Do List
 
 React-to-do-list is a simple to-do list app created in React.js that lets you add items to your list and delete them.
 
